@@ -1,27 +1,75 @@
 <!doctype html><html lang="lt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Trūkstamų dokumentų radaras buhalterinėms įmonėms | SpartaWeb</title><meta name="description" content="Įkelkite kliento banko išrašą ir gaukite sąrašą operacijų, kurioms trūksta dokumento, bei paruoštus priminimus.">
+<title>Trūkstamų dokumentų radaras buhalterinėms įmonėms | SpartaWeb</title>
+<meta name="description" content="Atsiunčiate kliento banko išrašą, o kitą darbo dieną gaunate sąrašą operacijų be sąskaitos ir paruoštus priminimus.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css"></head><body>
-<header><div class="w"><small>SpartaWeb | MB Domero · pilotas pirmoms 3 įmonėms</small>
-<h1>Trūkstamų dokumentų radaras</h1><p>Įkeliate kliento banko išrašą (CSV) ir sąskaitas, o mes grąžiname sąrašą operacijų, kurioms trūksta dokumento, ir paruoštus priminimus klientui bei tiekėjui. Banko ar pašto prieigos nereikia.</p>
-<a class="btn" href="#kainos">Pradėti pilotą</a> <a class="btn alt" href="mailto:dominykas@spartaweb.lt">Parašyti</a></div></header>
-<main class="w">
-<section><h2>Problema</h2><p>Mėnesio pabaigoje klientai vėluoja atsiųsti sąskaitas, dalis jų dingsta. Buhalteris valandas lygina banko išrašą su gautais dokumentais ir rašo tuos pačius priminimus.</p></section>
-<section><h2>Kaip tai veikia</h2><div class="cards">
-<div class="card"><b>1. Atsiunčiate failus</b><p>Kliento banko išrašą (CSV) ir gautų sąskaitų ZIP į dominykas@spartaweb.lt (rekomenduojame slaptažodžiu apsaugotą ZIP).</p></div>
-<div class="card"><b>2. Sutikriname</b><p>Kiekvieną banko operaciją sulyginame su dokumentais ir pažymime, kurioms dokumento trūksta.</p></div>
-<div class="card"><b>3. Gaunate rezultatą</b><p>Per 1 darbo dieną: trūkstamų dokumentų sąrašas ir priminimų juodraščiai klientui bei tiekėjams.</p></div></div></section>
-<section><h2>Ką gaunate</h2><ul><li>Operacijų be dokumento sąrašą (data, suma, gavėjas, paskirtis)</li><li>Priminimo laiško klientui juodraštį</li><li>Užklausų tiekėjams juodraščius</li><li>Jokių integracijų: dirbate su savo apskaitos programa kaip įprastai</li></ul></section>
-<section id="kainos"><h2>Kainos</h2><div class="cards">
-<div class="card"><div>Už klientą</div><div class="price">€4 <small>/ klientui / mėn.</small></div><p>Pasirenkate klientų skaičių (1–50).</p><a class="btn" href="https://buy.stripe.com/7sY28t3O4d5g0zm7ZP8bS00">Užsakyti</a></div>
-<div class="card"><div>Biuro planas</div><div class="price">€49 <small>/ mėn.</small></div><p>Visam biurui, be klientų limito.</p><a class="btn" href="https://buy.stripe.com/14A6oJ84kd5g95Sbc18bS01">Užsakyti</a></div></div>
-<p><small>Prenumerata kas mėnesį, galite nutraukti bet kada. Po apmokėjimo per 1 darbo dieną atsiųsime duomenų tvarkymo sutartį.</small></p></section>
-<section><h2>Pinigų grąžinimas</h2><p>Jei po pirmo mėnesio radaras jums nenaudingas, parašykite mums ir grąžinsime visą pirmo mėnesio sumą, be klausimų. <a href="salygos.html">Piloto sąlygos</a></p></section>
-<section><h2>Duomenų apsauga</h2><p>Prieš pirmą failą pasirašome duomenų tvarkymo sutartį (BDAR 28 str.): jūs esate duomenų valdytojas, MB Domero – tvarkytojas. Failus naudojame tik sutikrinimui, ištriname ne vėliau kaip po 30 dienų. Banko ar pašto prisijungimų neprašome. <a href="privatumas.html">Privatumo pranešimas</a></p></section>
-<section><h2>DUK</h2>
+<nav class="nav"><div class="w nav-in"><a class="logo" href="index.html"><span class="mark"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M8 11h6M11 8v6"/></svg></span>Radaras <span class="by">by SpartaWeb</span></a>
+<div class="nav-links"><a href="#kaip">Kaip veikia</a><a href="#kainos">Kainos</a><a href="#duk">DUK</a><a class="btn sm" href="#kainos">Išbandyti</a></div></div></nav>
+
+<header class="hero"><div class="w">
+<span class="pill">Pilotas pirmoms 3 buhalterinėms įmonėms</span>
+<h1>Mėnesio pabaiga be „atsiųskite dar tą sąskaitą“</h1>
+<p class="lead">Atsiunčiate kliento banko išrašą, o kitą darbo dieną gaunate sąrašą, kurioms operacijoms trūksta sąskaitos, ir paruoštus priminimus, kuriuos belieka išsiųsti. Banko ar pašto prieigos nereikia.</p>
+<div class="cta"><a class="btn lg" href="#kainos">Išbandyti su 5 klientais</a><a class="btn ghost lg" href="mailto:dominykas@spartaweb.lt">Parašyti mums</a></div>
+<ul class="trust">
+<li><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg>Duomenų tvarkymo sutartis (BDAR 28 str.)</li>
+<li><svg viewBox="0 0 24 24"><path d="M3 12h18M12 3v18" transform="rotate(45 12 12)"/></svg>Be banko ir pašto prieigos</li>
+<li><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5"/></svg>Pinigų grąžinimas po 1 mėn.</li>
+</ul></div></header>
+
+<main>
+<section class="w sec"><div class="sec-h"><span class="eyebrow">Problema</span><h2>Ar tai skamba pažįstamai?</h2></div>
+<div class="grid3">
+<div class="card prob"><span class="ic"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zM14 3v6h6M9 14l6 0"/></svg></span><p>Klientas sako „viską atsiunčiau“, o banke dar keliolika operacijų be dokumento.</p></div>
+<div class="card prob"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H5.2L4 17.2zM8 9h8M8 12h5"/></svg></span><p>Tą patį priminimą rašote trečią kartą, o PVM deklaracija jau rytoj.</p></div>
+<div class="card prob"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><p>Valandos išrašo lyginimui eilutė po eilutės, už kurias klientas nemoka.</p></div>
+</div></section>
+
+<section id="kaip" class="band"><div class="w sec"><div class="sec-h"><span class="eyebrow">Kaip tai veikia</span><h2>Trys žingsniai, jokių integracijų</h2></div>
+<div class="grid3 steps">
+<div class="card"><span class="num">1</span><h3>Atsiunčiate failus</h3><p>Kliento banko išrašą (CSV) ir gautų sąskaitų ZIP į <a href="mailto:dominykas@spartaweb.lt">dominykas@spartaweb.lt</a> (rekomenduojame slaptažodžiu apsaugotą ZIP).</p></div>
+<div class="card"><span class="num">2</span><h3>Sutikriname</h3><p>Kiekvieną banko operaciją sulyginame su dokumentais ir pažymime, kurioms dokumento trūksta.</p></div>
+<div class="card"><span class="num">3</span><h3>Gaunate rezultatą</h3><p>Per 1 darbo dieną: trūkstamų dokumentų sąrašas ir priminimų juodraščiai klientui bei tiekėjams.</p></div>
+</div>
+<div class="gets"><h3>Ką gaunate</h3><ul class="checks">
+<li>Operacijų be dokumento sąrašą (data, suma, gavėjas, paskirtis)</li>
+<li>Priminimo laiško klientui juodraštį</li>
+<li>Užklausų tiekėjams juodraščius</li>
+<li>Jokių integracijų: dirbate su savo apskaitos programa kaip įprastai</li></ul></div>
+</div></section>
+
+<section id="kainos" class="w sec"><div class="sec-h"><span class="eyebrow">Kainos</span><h2>Paprasta mėnesio prenumerata</h2><p class="muted">Galite nutraukti bet kada. Po apmokėjimo per 1 darbo dieną atsiųsime duomenų tvarkymo sutartį.</p></div>
+<div class="prices">
+<div class="card price-card"><h3>Už klientą</h3><div class="price">€4<span>/ klientui / mėn.</span></div><p class="muted">Pasirenkate klientų skaičių (1–50). Patogu pradėti nuo kelių klientų.</p>
+<ul class="checks"><li>Rezultatas per 1 darbo dieną</li><li>Sąrašas ir priminimų juodraščiai</li><li>Nutraukiate bet kada</li></ul>
+<a class="btn lg block" href="https://buy.stripe.com/7sY28t3O4d5g0zm7ZP8bS00">Išbandyti su 5 klientais</a></div>
+<div class="card price-card hl"><span class="tag">Visam biurui</span><h3>Biuro planas</h3><div class="price">€49<span>/ mėn.</span></div><p class="muted">Visam biurui, be klientų limito.</p>
+<ul class="checks"><li>Rezultatas per 1 darbo dieną</li><li>Sąrašas ir priminimų juodraščiai</li><li>Be klientų limito</li></ul>
+<a class="btn lg block" href="https://buy.stripe.com/14A6oJ84kd5g95Sbc18bS01">Užsakyti biuro planą</a></div>
+</div>
+<div class="refund"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5"/></svg><p><b>Pinigų grąžinimas.</b> Jei po pirmo mėnesio radaras jums nenaudingas, parašykite mums ir grąžinsime visą pirmo mėnesio sumą, be klausimų. <a href="salygos.html">Piloto sąlygos</a></p></div>
+</section>
+
+<section class="band"><div class="w sec two">
+<div><span class="eyebrow">Duomenų apsauga</span><h2>Jūsų klientų duomenys lieka jūsų</h2></div>
+<p>Prieš pirmą failą pasirašome duomenų tvarkymo sutartį (BDAR 28 str.): jūs esate duomenų valdytojas, MB Domero – tvarkytojas. Failus naudojame tik sutikrinimui, ištriname ne vėliau kaip po 30 dienų. Banko ar pašto prisijungimų neprašome. <a href="privatumas.html">Privatumo pranešimas</a></p>
+</div></section>
+
+<section id="duk" class="w sec narrow"><div class="sec-h"><span class="eyebrow">DUK</span><h2>Dažniausi klausimai</h2></div>
+<details><summary>Kaip saugiai atsiųsti failus?</summary><p>Banko išrašą (CSV) ir sąskaitų ZIP atsiunčiate į dominykas@spartaweb.lt. Rekomenduojame ZIP apsaugoti slaptažodžiu. Failus naudojame tik sutikrinimui ir ištriname ne vėliau kaip po 30 dienų.</p></details>
+<details><summary>Ar reikia banko ar pašto prieigos?</summary><p>Ne. Užtenka išrašo CSV, kurį eksportuojate iš banko ar apskaitos programos. Banko ar pašto prisijungimų neprašome.</p></details>
+<details><summary>Kada gausiu duomenų tvarkymo sutartį?</summary><p>Per 1 darbo dieną po apmokėjimo. Ją pasirašome prieš pirmą failą.</p></details>
+<details><summary>O jei nebus naudos?</summary><p>Per 14 dienų nuo pirmo mėnesio pabaigos parašykite dominykas@spartaweb.lt – grąžinsime visą pirmo mėnesio sumą per 5 darbo dienas, priežasties nereikalaujame.</p></details>
 <details><summary>Mano apskaitos programa jau tai daro?</summary><p>Daugelis programų importuoja banko išrašus ir sudengia skolas, bet nerodo, kuriai išmokai trūksta dokumento, ir neparuošia priminimų. Pilote tai patikrinsite patys – jei nebus naudos, grąžinsime pinigus.</p></details>
-<details><summary>Ar reikia banko prieigos?</summary><p>Ne. Užtenka išrašo CSV, kurį eksportuojate iš banko ar apskaitos programos.</p></details>
 <details><summary>Kokius bankus palaikote?</summary><p>Swedbank, SEB, Luminor, Šiaulių banką, Revolut ir kitus, jei išrašas yra CSV formatu.</p></details>
-<details><summary>Kiek laiko užtrunka?</summary><p>Rezultatą atsiunčiame per 1 darbo dieną nuo failų gavimo.</p></details>
-<details><summary>Ar galiu nutraukti?</summary><p>Taip, bet kada. Prenumerata baigsis apmokėto mėnesio pabaigoje.</p></details></section>
-<section><h2>Kontaktai</h2><p>Dominykas Stanevičius<br>SpartaWeb | MB Domero<br><a href="mailto:dominykas@spartaweb.lt">dominykas@spartaweb.lt</a> · <a href="tel:+37063333598">+370 633 33598</a></p></section>
-</main><footer class="w">© 2026 MB Domero · <a href="salygos.html">Sąlygos</a> · <a href="privatumas.html">Privatumas</a></footer></body></html>
+<details><summary>Ar galiu nutraukti?</summary><p>Taip, bet kada. Prenumerata baigsis apmokėto mėnesio pabaigoje.</p></details>
+</section>
+
+<section class="w sec"><div class="final"><h2>Išbandykite su savo mėnesio pabaiga</h2><p>Pradėkite nuo 5 klientų ir pamatykite rezultatą per 1 darbo dieną.</p><div class="cta"><a class="btn lg light" href="https://buy.stripe.com/7sY28t3O4d5g0zm7ZP8bS00">Išbandyti su 5 klientais</a><a class="btn lg outline" href="mailto:dominykas@spartaweb.lt">dominykas@spartaweb.lt</a></div></div></section>
+</main>
+<footer class="foot"><div class="w foot-in">
+<div><b>SpartaWeb | MB Domero</b><br>Įmonės kodas 306630756<br>Dominykas Stanevičius</div>
+<div><a href="mailto:dominykas@spartaweb.lt">dominykas@spartaweb.lt</a><br><a href="tel:+37063333598">+370 633 33598</a></div>
+<div><a href="salygos.html">Piloto sąlygos</a><br><a href="privatumas.html">Privatumas</a><br>© 2026 MB Domero</div>
+</div></footer></body></html>
